@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo with loacl storage</title>
+    <link rel="stylesheet" href="main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <section class="content">
+        <form action="" class="form" id="form" >
+
+            <div class="form-message">
+                <label class="form-label" for="message">task:</label>
+                <input name="message" id="message" autocomplete="off"></input>
+            </div>
+
+            <div class="form-deadline">
+                <label class="form-label" for="deadline">deadline:</label>
+                <input name="deadline" id="deadline" autocomplete="off"></input>
+            </div>
+
+            <div class="form-submit">
+                <button type="submit" class="button form-button">add</button>
+            </div>
+
+        </form>
+
+        <section class="tasks-list">
+            <header class="tasks-list-header">
+                <h2 class="tasks-list-title">
+                    list of tasks:
+                </h2>
+                <form class="tasks-search-form">
+                    <label class="form-search" for="todoSearch">search:</label>
+                    <input type="search" id="todoSearch" class="task-search"  autocomplete="off">
+                </form>
+            </header>
+
+            <div class="list" id="todoList">
+                <!-- to wchodzą taski -->
+            </div>
+        </section>
+
+    </section>
+
+</body>
+</html>

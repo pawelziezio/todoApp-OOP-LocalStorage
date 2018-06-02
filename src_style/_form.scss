@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: rgb(85, 84, 84);
+}
+
+.content{
+    max-width: 66rem;
+    margin: 4rem auto;
+}
+
+.form{
+    font-family: Arial, Tahoma, sans-serif;
+    box-shadow: 0 0 50px rgba(0,0,0,.1);
+    padding: 1.6rem;
+    margin: 0 3rem;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.form-message{
+    flex: 1 1 60%;
+    padding: .4rem 1.4rem;
+}
+.form-deadline{
+    flex: 1 1 30%;
+}
+.form-submit{
+    flex:1 1 10%;
+    text-align: center;
+}
+
+@media screen and (max-width: 950px){
+    .form-message{
+        text-align: center;
+        flex: 1 1 100%;
+        margin-bottom: 1.6rem;
+    }
+    .form-deadline{
+        text-align: center;
+        flex: 1 1 70%;
+    }
+    .form-submit{
+        flex:1 1 30%;
+        text-align: center;
+    }
+}
+
+input{
+    height: 2.2rem;
+    border-radius: 20px;
+    padding: 1.2em;
+    font-size: 1rem;
+    outline: none;
+    border: 0 solid rgba(100,100,100,.3);
+    box-shadow: 0 0 50px rgba(0,0,0,.1);
+    &:focus{
+        box-shadow: 0 0 20px rgba(67, 195, 255, 0.5);
+    }
+}
+input:focus, button:focus{
+    outline: none;
+}
+
+.form-message input{
+    width: 85%;
+}
+.form-deadline input{
+    width: 65%;
+}
+label{
+    padding: 0 10px 0 0;
+    letter-spacing: .03em;
+}
+
+.form-button{
+    padding: .8rem;
+    border-radius: 22px;
+    font-size: .9rem;
+    background: lightgray;
+    border: 0 solid rgba(100,100,100,.3);
+    box-shadow: 0 0 50px rgba(0,0,0,.1);
+    transition: .3s all;
+    &:hover{
+        background: rgba(100,100,100,.6);
+        box-shadow: 0 0 50px rgba(0,0,0,.2);
+    }
+    &:active{
+        background: white;
+        color: rgb(97, 97, 97);
+    }
+}
